@@ -1,5 +1,7 @@
 # sql-complete-snippets README
 
+contact: rajasekar_e_c@outlook.com
+
 This is the README for your extension "sql-complete-snippets". After writing up a brief description, we recommend including the following sections.
 
 ## Features

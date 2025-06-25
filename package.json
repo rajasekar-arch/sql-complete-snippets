@@ -15,7 +15,8 @@
     "snippets": [
       {
         "language": "sql",
-        "path": "./snippets/sql.json"
+        "path": "./snippets/sql.json",
+        "repository":"https://github.com/rajasekar-arch/sql-complete-snippets"
       }
     ]
   },
