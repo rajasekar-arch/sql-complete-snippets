@@ -2,6 +2,7 @@
   "name": "sql-complete-snippets",
   "displayName": "sql-complete-snippets",
   "description": "\"Boost SQL productivity in VS Code with ready-to-use snippets for queries, joins, DDL, and more—fast, clean, efficient coding.\"",
+  "publisher": "RajasekarEC",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.101.0"
