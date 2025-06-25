@@ -1,65 +1,112 @@
 # sql-complete-snippets README
 
-This is the README for your extension "sql-complete-snippets". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "sql-complete-snippets".
 
-## Features
+# SQL Snippets for VS Code
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+[![Visual Studio Marketplace Installs](https://img.shields.io/visual-studio-marketplace/i/YourPublisher.SQLSnippets?style=for-the-badge&label=Installs)](https://marketplace.visualstudio.com/items?itemName=YourPublisher.SQLSnippets)
+[![Visual Studio Marketplace Rating](https://img.shields.io/visual-studio-marketplace/r/YourPublisher.SQLSnippets?style=for-the-badge)](https://marketplace.visualstudio.com/items?itemName=YourPublisher.SQLSnippets)
+[![License](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
 
-For example if there is an image subfolder under your extension project workspace:
+An essential VS Code extension for developers working with SQL. This extension provides a rich collection of SQL snippets covering DDL, DML, DQL, DCL, and TCL commands, designed to boost your productivity by auto-completing common SQL queries.
 
-\!\[feature X\]\(images/feature-x.png\)
+## ✨ Features
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+- **Comprehensive Snippets:** Access a wide range of SQL commands for Data Definition Language (DDL), Data Manipulation Language (DML), Data Query Language (DQL), Data Control Language (DCL), and Transaction Control Language (TCL).
+- **Intuitive Prefixing:** Simply type `sql` followed by a common SQL keyword (e.g., `select`, `delete`, `update`, `create`, `grant`, `commit`) to get a curated list of related snippets.
+- **Accelerated Development:** Reduce repetitive typing and minimize syntax errors, allowing you to focus more on your database logic.
+- **Contextual Suggestions:** Snippets are designed to offer useful starting points for various SQL operations.
 
-## Requirements
+## 🚀 Installation
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+1.  Open VS Code.
+2.  Go to the Extensions view (Ctrl+Shift+X or Cmd+Shift+X).
+3.  Search for "SQL Snippets" (or "Your Publisher Name SQL Snippets").
+4.  Click **Install**.
 
-## Extension Settings
+Alternatively, install directly from the [VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=YourPublisher.SQLSnippets).
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## 💡 Usage
 
-For example:
+Using the snippets is straightforward and designed for maximum efficiency:
 
-This extension contributes the following settings:
+1.  Open any file with a SQL language mode (e.g., `.sql` file, or within a `.js`/`.ts` file if you have a SQL formatter/syntax highlighter extension that recognizes embedded SQL).
+2.  Start typing the prefix `sql` followed by the SQL command you need.
+3.  **Examples:**
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+    - To get a `SELECT` statement: Type `sql-select`
+    - To get an `INSERT` statement: Type `sql-insert`
+    - To get an `UPDATE` statement: Type `sql-update`
+    - To get a `DELETE` statement: Type `sql-delete`
+    - To get a `CREATE TABLE` statement: Type `sql-create` or `sql-createtable`
+    - To get a `GRANT` statement: Type `sql-grant`
+    - To get a `COMMIT` statement: Type `sql-commit`
 
-## Known Issues
+    The IntelliSense suggestions will appear as you type, guiding you to the specific snippet you need.
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+4.  Select the desired snippet from the list, and it will be inserted into your code. Use `Tab` to navigate through the placeholder values (e.g., table names, column names, conditions) and customize the query.
 
-## Release Notes
+### Snippet Examples (Non-exhaustive)
 
-Users appreciate release notes as you update your extension.
+Here are just a few examples of the types of snippets you'll find:
 
-### 1.0.0
+#### DDL (Data Definition Language)
 
-Initial release of ...
+- `sql-create`: `CREATE TABLE`, `CREATE INDEX`, `CREATE VIEW`, `CREATE DATABASE`
+- `sql-drop`: `DROP TABLE`, `DROP INDEX`, `DROP VIEW`, `DROP DATABASE`
+- `sql-alter`: `ALTER TABLE ADD COLUMN`, `ALTER TABLE MODIFY COLUMN`, `ALTER TABLE DROP COLUMN`
 
-### 1.0.1
+#### DML (Data Manipulation Language)
 
-Fixed issue #.
+- `sql-insert`: `INSERT INTO ... VALUES`, `INSERT INTO ... SELECT`
+- `sql-update`: `UPDATE ... SET ... WHERE`
+- `sql-delete`: `DELETE FROM ... WHERE`
+- `sql-merge`: `MERGE INTO ... USING ... ON`
 
-### 1.1.0
+#### DQL (Data Query Language)
 
-Added features X, Y, and Z.
+- `sql-select`: `SELECT * FROM`, `SELECT ... FROM ... WHERE`, `SELECT ... JOIN ... ON`, `SELECT ... GROUP BY`, `SELECT ... ORDER BY`, `SELECT ... LIMIT/OFFSET`
+- `sql-distinct`: `SELECT DISTINCT`
+- `sql-union`: `UNION ALL`
+
+#### DCL (Data Control Language)
+
+- `sql-grant`: `GRANT SELECT ON ... TO ...`
+- `sql-revoke`: `REVOKE INSERT ON ... FROM ...`
+
+#### TCL (Transaction Control Language)
+
+- `sql-begin`: `BEGIN TRANSACTION` (or `BEGIN WORK`)
+- `sql-commit`: `COMMIT` (or `COMMIT WORK`)
+- `sql-rollback`: `ROLLBACK` (or `ROLLBACK WORK`)
+- `sql-sp`: `SAVEPOINT`
+
+## 🤝 Contributing
+
+Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks!
+
+1.  Fork the Project
+2.  Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3.  Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4.  Push to the Branch (`git push origin feature/AmazingFeature`)
+5.  Open a Pull Request
+
+## 🐛 Issues and Feedback
+
+If you encounter any bugs, have feature requests, or just want to provide feedback, please open an issue on the [GitHub repository](https://github.com/YourGitHubUsername/your-repo-name/issues).
+
+## 📄 License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+## 🔗 Links
+
+- [Visual Studio Code Marketplace](https://marketplace.visualstudio.com/items?itemName=YourPublisher.SQLSnippets)
+- [GitHub Repository](https://github.com/YourGitHubUsername/your-repo-name)
 
 ---
 
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+**Happy Coding with SQL Snippets!**
